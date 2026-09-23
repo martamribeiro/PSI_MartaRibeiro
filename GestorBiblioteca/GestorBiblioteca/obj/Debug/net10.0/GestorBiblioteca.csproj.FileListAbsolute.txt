@@ -1,0 +1,16 @@
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\bin\Debug\net10.0\GestorBiblioteca.exe
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\bin\Debug\net10.0\GestorBiblioteca.deps.json
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\bin\Debug\net10.0\GestorBiblioteca.runtimeconfig.json
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\bin\Debug\net10.0\GestorBiblioteca.dll
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\bin\Debug\net10.0\GestorBiblioteca.pdb
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\obj\Debug\net10.0\GestorBiblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\obj\Debug\net10.0\GestorBiblioteca.AssemblyInfoInputs.cache
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\obj\Debug\net10.0\GestorBiblioteca.AssemblyInfo.cs
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\obj\Debug\net10.0\GestorBiblioteca.csproj.CoreCompileInputs.cache
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\obj\Debug\net10.0\GestorBiblioteca.sourcelink.json
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\obj\Debug\net10.0\GestorBiblioteca.dll
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\obj\Debug\net10.0\refint\GestorBiblioteca.dll
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\obj\Debug\net10.0\GestorBiblioteca.pdb
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\obj\Debug\net10.0\GestorBiblioteca.genruntimeconfig.cache
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\obj\Debug\net10.0\ref\GestorBiblioteca.dll
+C:\Projects\PSI_MartaRibeiro\GestorBiblioteca\GestorBiblioteca\obj\Debug\net10.0\GestorBi.C0F84645.Up2Date

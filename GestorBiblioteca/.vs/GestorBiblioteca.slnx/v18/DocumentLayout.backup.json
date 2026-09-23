@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52E76435-4C9C-4886-A6B3-7903FD8F6130}|GestorBiblioteca\\GestorBiblioteca.csproj|c:\\projects\\psi_martaribeiro\\gestorbiblioteca\\gestorbiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52E76435-4C9C-4886-A6B3-7903FD8F6130}|GestorBiblioteca\\GestorBiblioteca.csproj|solutionrelative:gestorbiblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52E76435-4C9C-4886-A6B3-7903FD8F6130}|GestorBiblioteca\\GestorBiblioteca.csproj|c:\\projects\\psi_martaribeiro\\gestorbiblioteca\\gestorbiblioteca\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52E76435-4C9C-4886-A6B3-7903FD8F6130}|GestorBiblioteca\\GestorBiblioteca.csproj|solutionrelative:gestorbiblioteca\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 232,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Program.cs",
+              "RelativeDocumentMoniker": "GestorBiblioteca\\Program.cs",
+              "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Program.cs",
+              "RelativeToolTip": "GestorBiblioteca\\Program.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T14:51:47.056Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 168,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Livro.cs",
+              "DocumentMoniker": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Livro.cs",
+              "RelativeDocumentMoniker": "GestorBiblioteca\\Livro.cs",
+              "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Livro.cs",
+              "RelativeToolTip": "GestorBiblioteca\\Livro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-23T15:26:49.455Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
