@@ -10,9 +10,22 @@ class Program //classe deste script
         //Console.WriteLine(mensagemBoasVindas);
         //string nome = "Marta";
         //Console.WriteLine(mensagemBoasVindas+" "+nome+".");
+        //Console.WriteLine("Olá "+nomeUtilizador+" tens " + idadeUtilizador+" anos.");
+        //Console.WriteLine("Olá {0} tens {1} anos.",nomeUtilizador,idadeUtilizador);
 
         Console.Write("Nome: ");
         string nomeUtilizador = Console.ReadLine();
-        Console.WriteLine("Olá "+nomeUtilizador);
+        Console.Write("Idade: ");
+        int idadeUtilizador = int.Parse(Console.ReadLine());
+        Console.Write("Altura (m): ");
+        double alturaUtilizador = double.Parse(Console.ReadLine());
+        Console.Write("Peso (kg): ");
+        double pesoUtilizador = double.Parse(Console.ReadLine());
+        Console.WriteLine($"Olá {nomeUtilizador} tens {idadeUtilizador} anos.");
+
+        double imc = pesoUtilizador / Math.Pow(alturaUtilizador,2);
+        imc = Math.Round(imc, 2);
+
+        Console.WriteLine($"O seu IMC (Indíce de Massa Corporal) é {imc}");
     }
 }
