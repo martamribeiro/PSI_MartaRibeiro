@@ -1,0 +1,16 @@
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\bin\Debug\net10.0\Introducao.exe
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\bin\Debug\net10.0\Introducao.deps.json
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\bin\Debug\net10.0\Introducao.runtimeconfig.json
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\bin\Debug\net10.0\Introducao.dll
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\bin\Debug\net10.0\Introducao.pdb
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\obj\Debug\net10.0\Introducao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\obj\Debug\net10.0\Introducao.AssemblyInfoInputs.cache
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\obj\Debug\net10.0\Introducao.AssemblyInfo.cs
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\obj\Debug\net10.0\Introducao.csproj.CoreCompileInputs.cache
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\obj\Debug\net10.0\Introducao.sourcelink.json
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\obj\Debug\net10.0\Introducao.dll
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\obj\Debug\net10.0\refint\Introducao.dll
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\obj\Debug\net10.0\Introducao.pdb
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\obj\Debug\net10.0\Introducao.genruntimeconfig.cache
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\obj\Debug\net10.0\ref\Introducao.dll
+C:\Projects\PSI_MartaRibeiro\Introducao\Introducao\obj\Debug\net10.0\Introducao.csproj.Up2Date
