@@ -39,6 +39,7 @@ class Program
                     break;
                 case 2:
                     // Pesquisar livro
+                    PesquisarLivro();
                     break;
                 case 3:
                     // Adicionar livro
@@ -58,6 +59,7 @@ class Program
                     break;
                 default:
                     // Outras opções
+                    Console.WriteLine("A opção não existe.");
                     break;
             }
 
@@ -78,23 +80,28 @@ class Program
         {
             foreach (Livro livro in livros)
             {
-                Console.WriteLine($"\n====== {livro.Título} ======");
-                Console.WriteLine("Autor: " + livro.Autor);
-                Console.WriteLine("ISBN: " + livro.ISBN);
-                Console.WriteLine("Ano de Publicação: " + livro.AnoPublicacao);
-                Console.WriteLine("Género: " + livro.Genero);
-                if (livro.Disponivel)
-                {
-                    Console.WriteLine("O livro está disponível");
-                }
-                else
-                {
-                    Console.WriteLine("O livro não está disponível");
-                }
-                Console.WriteLine("=============================");
+                LivroInfo(livro);
             }
         }
 
+    }
+
+    public static void LivroInfo(Livro livro)
+    {
+        Console.WriteLine($"\n====== {livro.Título} ======");
+        Console.WriteLine("Autor: " + livro.Autor);
+        Console.WriteLine("ISBN: " + livro.ISBN);
+        Console.WriteLine("Ano de Publicação: " + livro.AnoPublicacao);
+        Console.WriteLine("Género: " + livro.Genero);
+        if (livro.Disponivel)
+        {
+            Console.WriteLine("O livro está disponível");
+        }
+        else
+        {
+            Console.WriteLine("O livro não está disponível");
+        }
+        Console.WriteLine("=============================");
     }
 
     // ----------------- 2. Pesquisar livro ------------------
@@ -103,7 +110,24 @@ class Program
     {
         Console.WriteLine("====== 2. Pesquisar Livro ======\n");
 
+        Console.WriteLine("Qual é o título do livro que quer pesquisar?");
+        string pesquisa = Console.ReadLine();
 
+        bool encontrado = false;
+
+        foreach(Livro livro in livros)
+        {
+            if (livro.Título.Contains(pesquisa, StringComparison.OrdinalIgnoreCase))
+            {
+                LivroInfo(livro);
+                encontrado = true;
+            }
+        }
+
+        if (!encontrado)
+        {
+            Console.WriteLine("Não foi encontrado nenhum livro com o título indicado.");
+        }
     }
 
     // ----------------- 3. Adicionar livros -----------------
