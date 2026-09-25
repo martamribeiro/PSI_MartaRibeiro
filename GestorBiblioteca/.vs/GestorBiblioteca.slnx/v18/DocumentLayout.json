@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{D1C85B17-9EB0-0771-B33D-5A753F0A3E3B}|GestorBiblioteca\\GestorBiblioteca.csproj|c:\\projects\\psi_martaribeiro\\gestorbiblioteca\\gestorbiblioteca\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1C85B17-9EB0-0771-B33D-5A753F0A3E3B}|GestorBiblioteca\\GestorBiblioteca.csproj|solutionrelative:gestorbiblioteca\\livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C85B17-9EB0-0771-B33D-5A753F0A3E3B}|GestorBiblioteca\\GestorBiblioteca.csproj|c:\\projects\\psi_martaribeiro\\gestorbiblioteca\\gestorbiblioteca\\utilizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C85B17-9EB0-0771-B33D-5A753F0A3E3B}|GestorBiblioteca\\GestorBiblioteca.csproj|solutionrelative:gestorbiblioteca\\utilizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,7 +21,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 261,
+          "DockedWidth": 221,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -28,7 +32,7 @@
               "RelativeDocumentMoniker": "GestorBiblioteca\\Program.cs",
               "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Program.cs",
               "RelativeToolTip": "GestorBiblioteca\\Program.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAgwCsAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwBsAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T14:51:47.056Z",
               "EditorCaption": ""
@@ -36,9 +40,22 @@
           ]
         },
         {
-          "DockedWidth": 139,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 179,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Utilizador.cs",
+              "DocumentMoniker": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Utilizador.cs",
+              "RelativeDocumentMoniker": "GestorBiblioteca\\Utilizador.cs",
+              "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Utilizador.cs",
+              "RelativeToolTip": "GestorBiblioteca\\Utilizador.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T08:12:00.434Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -47,7 +64,7 @@
               "RelativeDocumentMoniker": "GestorBiblioteca\\Livro.cs",
               "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Livro.cs",
               "RelativeToolTip": "GestorBiblioteca\\Livro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T15:26:49.455Z",
               "EditorCaption": ""

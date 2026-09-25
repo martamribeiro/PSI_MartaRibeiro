@@ -5,6 +5,7 @@ class Program
     // --------------------- Variáveis ---------------------
 
     public static List<Livro> livros = new List<Livro>();
+    public static List<Utilizador> utilizadores = new List<Utilizador>();
 
     // ---------------------- Métodos ----------------------
 
@@ -18,12 +19,19 @@ class Program
             // --------------------- Cabeçalho ---------------------
 
             Console.WriteLine("\n====== Gestor de Biblioteca ======\n");
+            Console.WriteLine("====== Livros ======");
             Console.WriteLine("1. Listar livros");
             Console.WriteLine("2. Pesquisar livro");
             Console.WriteLine("3. Adicionar livro");
-            Console.WriteLine("4. Requesitar livro");
+            Console.WriteLine("4. Requisitar livro");
             Console.WriteLine("5. Devolver livro");
             Console.WriteLine("6. Remover livro");
+            Console.WriteLine("====== Utilizadores ======");
+            Console.WriteLine("7. Adicionar utilizador");
+            Console.WriteLine("8. Pesquisar utilizador"); //fazer mais tarde
+            Console.WriteLine("9. Remover utilizador"); //fazer mais tarde
+            //listar utilizador
+            Console.WriteLine("====== Outros ======");
             Console.WriteLine("0. Sair\n");
             Console.Write("Selecione uma opção: ");
 
@@ -47,12 +55,24 @@ class Program
                     break;
                 case 4:
                     // Requisitar livro
+                    RequisitarLivro();
                     break;
                 case 5:
                     // Devolver livro
                     break;
                 case 6:
                     // Remover livro
+                    RemoverLivro();
+                    break;
+                case 7:
+                    // Adicionar utilizador
+                    AdicionarUtilizador();
+                    break;
+                case 8:
+                    // Pesquisar utilizador
+                    break;
+                case 9:
+                    // Remover utilizador
                     break;
                 case 0:
                     // Sair
@@ -70,7 +90,7 @@ class Program
 
     private static void ListarLivros()
     {
-        Console.WriteLine("====== 1. Listar Livros ======");
+        Console.WriteLine("\n====== 1. Listar Livros ======");
 
         if (livros.Count == 0)
         {
@@ -108,9 +128,9 @@ class Program
 
     private static void PesquisarLivro()
     {
-        Console.WriteLine("====== 2. Pesquisar Livro ======\n");
+        Console.WriteLine("\n====== 2. Pesquisar Livro ======\n");
 
-        Console.WriteLine("Qual é o título do livro que quer pesquisar?");
+        Console.WriteLine("Qual é o título do livro que quer pesquisar?\n");
         string pesquisa = Console.ReadLine();
 
         bool encontrado = false;
@@ -126,7 +146,7 @@ class Program
 
         if (!encontrado)
         {
-            Console.WriteLine("Não foi encontrado nenhum livro com o título indicado.");
+            Console.WriteLine("\nNão foi encontrado nenhum livro com o título indicado.");
         }
     }
 
@@ -134,7 +154,7 @@ class Program
 
     private static void AdicionarLivro()
     {
-        Console.WriteLine("====== 3. Adicionar Livro ======\n");
+        Console.WriteLine("\n====== 3. Adicionar Livro ======\n");
         //titulo, autor, isbn, ano de publicaçao, genero
         Console.Write("Título: ");
         string titulo = Console.ReadLine();
@@ -160,4 +180,87 @@ class Program
         livros.Add(livroNovo);
 
     }
+
+    // ----------------- 4. Requisitar livro -----------------
+
+    private static void RequisitarLivro()
+    {
+        //to-do
+    }
+
+    // ----------------- 6. Remover livro -----------------
+
+    private static void RemoverLivro()
+    {
+        Console.WriteLine("\n====== 6. Remover Livro ======\n");
+
+        Console.Write("\nInsira o ISBN do livro que deseja remover: ");
+        string isbnRemover = Console.ReadLine();
+
+        Livro livroEncontrado = null;
+
+        foreach (Livro livro in livros)
+        {
+            if(isbnRemover.Equals(livro.ISBN, StringComparison.OrdinalIgnoreCase))
+            {
+                livroEncontrado = livro;
+                break;
+            }
+        }
+
+        if (livroEncontrado == null)
+        {
+            Console.WriteLine("\nNão existe nenhum livro com o ISBN indicado.");
+        }
+        else
+        {
+            Console.Write($"\nDeseja remover {livroEncontrado.Título}, de {livroEncontrado.Autor}? (s/n): ");
+            char resposta = char.Parse(Console.ReadLine());
+            if (resposta == 's')
+            {
+                livros.Remove(livroEncontrado);
+                Console.WriteLine($"\n{livroEncontrado.Título}, de {livroEncontrado.Autor} foi removido.");
+            }
+        }
+    }
+
+    // ----------------- 7. Adicionar utilizador -----------------
+
+    private static void AdicionarUtilizador()
+    {
+        Console.WriteLine("\n====== 7. Adicionar utilizador ======\n");
+
+        Console.Write("Insira o nome do utilizador: ");
+        string nomeUtilizador = Console.ReadLine();
+        string numeroCartaoBiblioteca = GerarNumeroCartaoBiblioteca();
+
+        Utilizador novoUtilizador = new Utilizador()
+        {
+            NumeroCartaoBiblioteca = numeroCartaoBiblioteca,
+            Nome = nomeUtilizador
+        };
+
+        utilizadores.Add(novoUtilizador);
+        Console.WriteLine("\nO utilizador foi adicionado.");
+    }
+
+    private static string GerarNumeroCartaoBiblioteca()
+    {
+        if(utilizadores.Count == 0)
+        {
+            return "000000001";
+        }
+        else
+        {
+            //queremos o numero de cartao do ultimo utilizador adicionado
+            //ultimo utilizador adicionado: utilizadores[utilizadores.Count() - 1]
+            /*
+            Utilizador ultimoUtilizador = utilizadores[utilizadores.Count() - 1];
+            string numeroUltimoUtilizador = ultimoUtilizador.NumeroCartaoBiblioteca;
+            */
+            string numeroUltimoUtilizador = utilizadores[utilizadores.Count() - 1].NumeroCartaoBiblioteca;
+            return (int.Parse(numeroUltimoUtilizador)+1).ToString("D9");
+        }
+    }
+
 }
