@@ -97,12 +97,30 @@ class Program
     {
         if (!File.Exists(ficheiroLivros))
         {
-            //...
+            //TO DO
         }
 
         //array de strings em que cada elemento corresponde a uma linha
         //do ficheiro, isto é, a um livro
         string[] linhas = File.ReadAllLines(ficheiroLivros);
+        foreach (string linha in linhas)
+        {
+            //Harry Potter|J.K. Rowling|9781234567890|1997|Fantasia|True
+            //Harry Potter
+            //J.K. Rowling
+            //...
+            string[] dados = linha.Split('|');
+            Livro livroNovo = new Livro
+            {
+                Título = dados[0],
+                Autor = dados[1],
+                ISBN = dados[2],
+                AnoPublicacao = int.Parse(dados[3]),
+                Genero = dados[4],
+                Disponivel = bool.Parse(dados[5])
+            };
+            livros.Add(livroNovo);
+        }
     }
 
     // ------------------ 1. Listar livros ------------------
