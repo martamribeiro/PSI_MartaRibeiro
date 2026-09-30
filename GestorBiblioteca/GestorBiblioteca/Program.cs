@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 class Program
 {
@@ -6,11 +7,14 @@ class Program
 
     public static List<Livro> livros = new List<Livro>();
     public static List<Utilizador> utilizadores = new List<Utilizador>();
+    public const string ficheiroLivros = "livros.txt";
 
     // ---------------------- Métodos ----------------------
 
     static void Main(string[] args)
     {
+
+        CarregarLivros();
         
         int opcao;
 
@@ -84,6 +88,21 @@ class Program
             }
 
         } while (opcao != 0);
+    }
+
+    //Exemplo de Ficheiro livros.txt :
+    //Harry Potter|J.K. Rowling|9781234567890|1997|Fantasia|True
+    //1984|George Orwell|9789876543210|1949|Distopia|True
+    private static void CarregarLivros()
+    {
+        if (!File.Exists(ficheiroLivros))
+        {
+            //...
+        }
+
+        //array de strings em que cada elemento corresponde a uma linha
+        //do ficheiro, isto é, a um livro
+        string[] linhas = File.ReadAllLines(ficheiroLivros);
     }
 
     // ------------------ 1. Listar livros ------------------
