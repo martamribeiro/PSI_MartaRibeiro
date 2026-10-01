@@ -220,7 +220,7 @@ class Program
             Disponivel = true
         };
 
-        File.WriteAllText(ficheiroLivros, livroNovo.Título+"|"+livroNovo.Autor+"|"+livroNovo.ISBN+"|"+livroNovo.AnoPublicacao+"|"+livroNovo.Genero+"|"+livroNovo.Disponivel);
+        File.AppendAllText(ficheiroLivros, livroNovo.Título+"|"+livroNovo.Autor+"|"+livroNovo.ISBN+"|"+livroNovo.AnoPublicacao+"|"+livroNovo.Genero+"|"+livroNovo.Disponivel+Environment.NewLine);
         livros.Add(livroNovo);
 
     }
