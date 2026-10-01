@@ -27,14 +27,14 @@ class Program
             Console.WriteLine("1. Listar livros");
             Console.WriteLine("2. Pesquisar livro");
             Console.WriteLine("3. Adicionar livro");
-            Console.WriteLine("4. Requisitar livro");
-            Console.WriteLine("5. Devolver livro");
+            Console.WriteLine("4. Requisitar livro"); //to-do
+            Console.WriteLine("5. Devolver livro"); //to-do
             Console.WriteLine("6. Remover livro");
             Console.WriteLine("====== Utilizadores ======");
             Console.WriteLine("7. Adicionar utilizador");
-            Console.WriteLine("8. Pesquisar utilizador"); //fazer mais tarde
-            Console.WriteLine("9. Remover utilizador"); //fazer mais tarde
-            //listar utilizador
+            Console.WriteLine("8. Pesquisar utilizador"); //to-do
+            Console.WriteLine("9. Remover utilizador"); //to-do
+            Console.WriteLine("10. Listar utilizador"); //to-do
             Console.WriteLine("====== Outros ======");
             Console.WriteLine("0. Sair\n");
             Console.Write("Selecione uma opção: ");
@@ -62,7 +62,8 @@ class Program
                     RequisitarLivro();
                     break;
                 case 5:
-                    // Devolver livro
+                    // Devolver livro - to-do
+                    DevolverLivro();
                     break;
                 case 6:
                     // Remover livro
@@ -73,10 +74,16 @@ class Program
                     AdicionarUtilizador();
                     break;
                 case 8:
-                    // Pesquisar utilizador
+                    // Pesquisar utilizador - to-do
+                    PesquisarUtilizador();
                     break;
                 case 9:
-                    // Remover utilizador
+                    // Remover utilizador - to-do
+                    RemoverUtilizador();
+                    break;
+                case 10:
+                    // Listar utilizador - to-do
+                    ListarUtilizador();
                     break;
                 case 0:
                     // Sair
@@ -90,6 +97,10 @@ class Program
         } while (opcao != 0);
     }
 
+    // --------------------------------------------------
+    // --------------------- Livros ---------------------
+    // --------------------------------------------------
+
     //Exemplo de Ficheiro livros.txt :
     //Harry Potter|J.K. Rowling|9781234567890|1997|Fantasia|True
     //1984|George Orwell|9789876543210|1949|Distopia|True
@@ -97,24 +108,12 @@ class Program
     {
         if (!File.Exists(ficheiroLivros))
         {
-            //criar livros.txt
             File.Create(ficheiroLivros);
-            //File.WriteAllText(ficheiroLivros, "Harry Potter|J.K. Rowling|9781234567890|1997|Fantasia|True\n1984|George Orwell|9789876543210|1949|Distopia|True");
-            //adicionar conteudo ao ficheiro
-
         }
 
-        //File.WriteAllText(ficheiroLivros, "Harry Potter|J.K. Rowling|9781234567890|1997|Fantasia|True\n1984|George Orwell|9789876543210|1949|Distopia|True");
-
-        //array de strings em que cada elemento corresponde a uma linha
-        //do ficheiro, isto é, a um livro
         string[] linhas = File.ReadAllLines(ficheiroLivros);
         foreach (string linha in linhas)
         {
-            //Harry Potter|J.K. Rowling|9781234567890|1997|Fantasia|True
-            //Harry Potter
-            //J.K. Rowling
-            //...
             string[] dados = linha.Split('|');
             Livro livroNovo = new Livro
             {
@@ -232,6 +231,14 @@ class Program
         //to-do
     }
 
+    // ----------------- 5. Devolver livro -----------------
+
+    private static void DevolverLivro()
+    {
+        //to-do
+    }
+    
+
     // ----------------- 6. Remover livro -----------------
 
     private static void RemoverLivro()
@@ -268,7 +275,16 @@ class Program
         }
     }
 
+    // --------------------------------------------------------
+    // --------------------- Utilizadores ---------------------
+    // --------------------------------------------------------
+
     // ----------------- 7. Adicionar utilizador -----------------
+
+    private static void CarregarUtilizadores()
+    {
+        //to-do
+    }
 
     private static void AdicionarUtilizador()
     {
@@ -296,15 +312,30 @@ class Program
         }
         else
         {
-            //queremos o numero de cartao do ultimo utilizador adicionado
-            //ultimo utilizador adicionado: utilizadores[utilizadores.Count() - 1]
-            /*
-            Utilizador ultimoUtilizador = utilizadores[utilizadores.Count() - 1];
-            string numeroUltimoUtilizador = ultimoUtilizador.NumeroCartaoBiblioteca;
-            */
             string numeroUltimoUtilizador = utilizadores[utilizadores.Count() - 1].NumeroCartaoBiblioteca;
             return (int.Parse(numeroUltimoUtilizador)+1).ToString("D9");
         }
+    }
+
+    // ----------------- 8. Pesquisar utilizador -----------------
+
+    private static void PesquisarUtilizador()
+    {
+        //to-do
+    }
+
+    // ----------------- 9. Remover utilizador -----------------
+
+    private static void RemoverUtilizador()
+    {
+        //to-do
+    }
+
+    // ----------------- 10. Listar utilizador -----------------
+
+    private static void ListarUtilizador()
+    {
+        //to-do
     }
 
 }
