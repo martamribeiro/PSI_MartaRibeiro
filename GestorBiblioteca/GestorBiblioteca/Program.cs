@@ -97,8 +97,14 @@ class Program
     {
         if (!File.Exists(ficheiroLivros))
         {
-            //TO DO
+            //criar livros.txt
+            File.Create(ficheiroLivros);
+            //File.WriteAllText(ficheiroLivros, "Harry Potter|J.K. Rowling|9781234567890|1997|Fantasia|True\n1984|George Orwell|9789876543210|1949|Distopia|True");
+            //adicionar conteudo ao ficheiro
+
         }
+
+        //File.WriteAllText(ficheiroLivros, "Harry Potter|J.K. Rowling|9781234567890|1997|Fantasia|True\n1984|George Orwell|9789876543210|1949|Distopia|True");
 
         //array de strings em que cada elemento corresponde a uma linha
         //do ficheiro, isto é, a um livro
@@ -214,6 +220,7 @@ class Program
             Disponivel = true
         };
 
+        File.WriteAllText(ficheiroLivros, livroNovo.Título+"|"+livroNovo.Autor+"|"+livroNovo.ISBN+"|"+livroNovo.AnoPublicacao+"|"+livroNovo.Genero+"|"+livroNovo.Disponivel);
         livros.Add(livroNovo);
 
     }
