@@ -8,6 +8,7 @@ class Program
     public static List<Livro> livros = new List<Livro>();
     public static List<Utilizador> utilizadores = new List<Utilizador>();
     public const string ficheiroLivros = "livros.txt";
+    public const string ficheiroUtilizadores = "utilizadores.txt";
 
     // ---------------------- Métodos ----------------------
 
@@ -15,6 +16,7 @@ class Program
     {
 
         CarregarLivros();
+        CarregarUtilizadores();
         
         int opcao;
 
@@ -283,7 +285,22 @@ class Program
 
     private static void CarregarUtilizadores()
     {
-        //to-do
+        if (!File.Exists(ficheiroUtilizadores))
+        {
+            File.Create(ficheiroUtilizadores);
+        }
+
+        string[] linhas = File.ReadAllLines(ficheiroUtilizadores);
+        foreach (string linha in linhas)
+        {
+            string[] dados = linha.Split('|');
+            Utilizador utilizadorNovo = new Utilizador
+            {
+                NumeroCartaoBiblioteca = dados[0],
+                Nome = dados[1]
+            };
+            utilizadores.Add(utilizadorNovo);
+        }
     }
 
     private static void AdicionarUtilizador()
@@ -301,6 +318,7 @@ class Program
         };
 
         utilizadores.Add(novoUtilizador);
+        File.AppendAllText(ficheiroUtilizadores, novoUtilizador.NumeroCartaoBiblioteca + "|" + novoUtilizador.Nome + Environment.NewLine);
         Console.WriteLine("\nO utilizador foi adicionado.");
     }
 
