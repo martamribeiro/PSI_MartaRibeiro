@@ -251,12 +251,13 @@ class Program
         string isbnRemover = Console.ReadLine();
 
         Livro livroEncontrado = null;
+        int indiceLivro=-1;
 
-        foreach (Livro livro in livros)
-        {
-            if(isbnRemover.Equals(livro.ISBN, StringComparison.OrdinalIgnoreCase))
+        for (int i = 0; i < livros.Count; i++) {
+                if (isbnRemover.Equals(livros[i].ISBN, StringComparison.OrdinalIgnoreCase))
             {
-                livroEncontrado = livro;
+                livroEncontrado = livros[i];
+                indiceLivro = i;
                 break;
             }
         }
@@ -272,6 +273,10 @@ class Program
             if (resposta == 's')
             {
                 livros.Remove(livroEncontrado);
+                string[] linhasLivros = File.ReadAllLines(ficheiroLivros);
+                List<string> novasLinhas = new List<string>(linhasLivros);
+                novasLinhas.RemoveAt(indiceLivro);
+                File.WriteAllLines(ficheiroLivros, linhasLivros);
                 Console.WriteLine($"\n{livroEncontrado.Título}, de {livroEncontrado.Autor} foi removido.");
             }
         }
@@ -339,14 +344,41 @@ class Program
 
     private static void PesquisarUtilizador()
     {
-        //to-do
+        Console.WriteLine("\n====== 8. Pesquisar Utilizador ======\n");
+
+        Console.WriteLine("Qual é o nome do utilizador que quer pesquisar?\n");
+        string pesquisa = Console.ReadLine();
+
+        bool encontrado = false;
+
+        foreach(Utilizador utilizador in utilizadores)
+        {
+            if(utilizador.Nome.Contains(pesquisa, StringComparison.OrdinalIgnoreCase))
+            {
+                UtilizadorInfo(utilizador);
+                encontrado = true;
+            }
+        }
+
+        if (!encontrado)
+        {
+            Console.WriteLine("\nNão foi encontrado nenhum utilizador com o nome indicado.");
+        }
+    }
+
+    public static void UtilizadorInfo(Utilizador utilizador)
+    {
+        Console.WriteLine("\n========================");
+        Console.WriteLine("Nome: " + utilizador.Nome);
+        Console.WriteLine("Número do Cartão da Biblioteca: " + utilizador.NumeroCartaoBiblioteca);
+        Console.WriteLine("\n========================");
     }
 
     // ----------------- 9. Remover utilizador -----------------
 
     private static void RemoverUtilizador()
     {
-        //to-do
+        
     }
 
     // ----------------- 10. Listar utilizador -----------------
