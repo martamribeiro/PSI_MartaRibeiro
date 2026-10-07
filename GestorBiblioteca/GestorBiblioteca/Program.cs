@@ -378,7 +378,7 @@ class Program
 
     private static void RemoverUtilizador()
     {
-        
+        //to-do
     }
 
     // ----------------- 10. Listar utilizador -----------------
