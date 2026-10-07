@@ -426,15 +426,67 @@ class Program
     // ==========================================================
 
     /// <summary>
-    /// Permite futuramente implementar a funcionalidade
-    /// de requisitar um livro.
-    /// 
-    /// Esta funcionalidade ainda não está implementada.
+    /// Permite requisitar um livro.
     /// </summary>
     private static void RequisitarLivro()
     {
-        // TODO:
-        // Implementar a funcionalidade de requisição.
+        Console.WriteLine("\n====== 4. Requisitar Livro ======\n");
+
+        Console.Write("Insira o ISBN do livro a requisitar: ");
+        string isbn = Console.ReadLine();
+
+        Livro livroARequisitar = null;
+
+        foreach(Livro livro in livros)
+        {
+            if(isbn.Equals(livro.ISBN, StringComparison.OrdinalIgnoreCase))
+            {
+                if (livro.Disponivel)
+                {
+                    livroARequisitar = livro;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("O livro não está disponível.");
+                    return;
+                }
+                
+            }
+        }
+
+        if (livroARequisitar == null)
+        {
+            Console.WriteLine("Não existe nenhum livro com o isbn indicado.");
+        }
+
+        Console.Write("Insira o número do cartão do utilizador: ");
+        string numeroCartao = Console.ReadLine();
+
+        Utilizador utilizadorEncontrado = null;
+
+        foreach (Utilizador utilizador in utilizadores) { 
+            if(numeroCartao.Equals(utilizador.NumeroCartaoBiblioteca, StringComparison.OrdinalIgnoreCase))
+            {
+                if (utilizador.LivrosRequisitados.Count < 2)
+                {
+                    utilizadorEncontrado = utilizador;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("O utilizador já atingiu o limite de livros.");
+                    return;
+                }
+            }
+        }
+
+        if(utilizadorEncontrado == null)
+        {
+            Console.WriteLine("O utilizador indicado não existe.");
+        }
+
+
     }
 
     // ==========================================================
@@ -897,7 +949,7 @@ class Program
     }
 
     // ==========================================================
-    // ================ 10. LISTAR UTILIZADORES ===============
+    // ================ 10. LISTAR UTILIZADORES =================
     // ==========================================================
 
     /// <summary>

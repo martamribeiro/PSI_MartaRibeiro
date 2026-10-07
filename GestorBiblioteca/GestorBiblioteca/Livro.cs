@@ -43,4 +43,13 @@ class Livro
     /// false = requisitado
     /// </summary>
     public bool Disponivel { get; set; }
+
+    public Utilizador UtilizadorRequisitado { get; set; }
+
+    public Livro()
+    {
+        Disponivel = true;
+        UtilizadorRequisitado = null;
+    }
+
 }
