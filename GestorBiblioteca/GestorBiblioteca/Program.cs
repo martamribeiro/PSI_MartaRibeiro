@@ -401,6 +401,12 @@ class Program
 
 
         // Guardar o livro no ficheiro.
+        GuardarLivro(livroNovo);
+    }
+
+    private static void GuardarLivro(Livro livroAGuardar)
+    {
+        // Guardar o livro no ficheiro.
         //
         // Os campos são separados pelo carácter '|'.
         //
@@ -408,17 +414,17 @@ class Program
         // no final do registo.
         File.AppendAllText(
             ficheiroLivros,
-            livroNovo.Título + "|" +
-            livroNovo.Autor + "|" +
-            livroNovo.ISBN + "|" +
-            livroNovo.AnoPublicacao + "|" +
-            livroNovo.Genero + "|" +
-            livroNovo.Disponivel +
+            livroAGuardar.Título + "|" +
+            livroAGuardar.Autor + "|" +
+            livroAGuardar.ISBN + "|" +
+            livroAGuardar.AnoPublicacao + "|" +
+            livroAGuardar.Genero + "|" +
+            livroAGuardar.Disponivel +
             Environment.NewLine);
 
 
         // Adicionar também o livro à lista em memória.
-        livros.Add(livroNovo);
+        livros.Add(livroAGuardar);
     }
 
     // ==========================================================
@@ -486,7 +492,16 @@ class Program
             Console.WriteLine("O utilizador indicado não existe.");
         }
 
+        livroARequisitar.Disponivel = false;
+        livroARequisitar.UtilizadorRequisitado = utilizadorEncontrado;
 
+        utilizadorEncontrado.LivrosRequisitados.Add(livroARequisitar);
+
+        //Atualizar os ficheiros
+        //GuardarLivro(livroARequisitar);
+        //GuardarUtilizador(utilizadorEncontrado);
+
+        Console.WriteLine($"O livro {livroARequisitar.Título} de {livroARequisitar.Autor} foi requisitado por {utilizadorEncontrado.Nome}, com o nº {utilizadorEncontrado.NumeroCartaoBiblioteca}.");
     }
 
     // ==========================================================
@@ -696,11 +711,17 @@ class Program
 
 
         // Guardar o utilizador no ficheiro.
+        GuardarUtilizador(novoUtilizador);
+    }
+
+    private static void GuardarUtilizador(Utilizador utilizadorAGuardar)
+    {
+        // Guardar o utilizador no ficheiro.
         File.AppendAllText(
             ficheiroUtilizadores,
-            novoUtilizador.NumeroCartaoBiblioteca +
+            utilizadorAGuardar.NumeroCartaoBiblioteca +
             "|" +
-            novoUtilizador.Nome +
+            utilizadorAGuardar.Nome +
             Environment.NewLine);
 
 
