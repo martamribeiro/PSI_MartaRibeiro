@@ -34,9 +34,9 @@ class Program
             Console.WriteLine("6. Remover livro");
             Console.WriteLine("====== Utilizadores ======");
             Console.WriteLine("7. Adicionar utilizador");
-            Console.WriteLine("8. Pesquisar utilizador"); //to-do
-            Console.WriteLine("9. Remover utilizador"); //to-do
-            Console.WriteLine("10. Listar utilizador"); //to-do
+            Console.WriteLine("8. Pesquisar utilizador");
+            Console.WriteLine("9. Remover utilizador");
+            Console.WriteLine("10. Listar utilizador");
             Console.WriteLine("====== Outros ======");
             Console.WriteLine("0. Sair\n");
             Console.Write("Selecione uma opção: ");
@@ -60,7 +60,7 @@ class Program
                     AdicionarLivro();
                     break;
                 case 4:
-                    // Requisitar livro
+                    // Requisitar livro - to-do
                     RequisitarLivro();
                     break;
                 case 5:
@@ -76,15 +76,15 @@ class Program
                     AdicionarUtilizador();
                     break;
                 case 8:
-                    // Pesquisar utilizador - to-do
+                    // Pesquisar utilizador
                     PesquisarUtilizador();
                     break;
                 case 9:
-                    // Remover utilizador - to-do
+                    // Remover utilizador
                     RemoverUtilizador();
                     break;
                 case 10:
-                    // Listar utilizador - to-do
+                    // Listar utilizador
                     ListarUtilizador();
                     break;
                 case 0:
@@ -378,14 +378,57 @@ class Program
 
     private static void RemoverUtilizador()
     {
-        //to-do
+        Console.WriteLine("\n====== 9. Remover Utilizador ======\n");
+
+        Console.WriteLine("Insira o número do cartão do utilizador que deseja remover.");
+        string numeroCartao = Console.ReadLine();
+        Utilizador utilizadorEncontrado = null;
+        int indiceUtilizador = -1;
+        for (int i = 0; i < utilizadores.Count; i++)
+        {
+            if (numeroCartao.Equals(utilizadores[i].NumeroCartaoBiblioteca, StringComparison.OrdinalIgnoreCase)){
+                utilizadorEncontrado = utilizadores[i];
+                indiceUtilizador = i;
+                break;
+            }
+        }
+        if(utilizadorEncontrado == null)
+        {
+            Console.WriteLine("Não existe nenhum utilizador com o número de cartão indicado.");
+        }
+        else
+        {
+            Console.Write("Deseja remover o utilizador "+utilizadorEncontrado.Nome+" com o número de cartão "+utilizadorEncontrado.NumeroCartaoBiblioteca+" ? (s/n): ");
+            char resposta = char.Parse(Console.ReadLine());
+            if(resposta == 's' || resposta == 'S')
+            {
+                utilizadores.Remove(utilizadorEncontrado);
+                string[] linhasUtilizadores = File.ReadAllLines(ficheiroUtilizadores);
+                List<string> novasLinhas = new List<string>(linhasUtilizadores);
+                novasLinhas.RemoveAt(indiceUtilizador);
+                File.WriteAllLines(ficheiroUtilizadores, novasLinhas);
+                Console.WriteLine("\nO utilizador " + utilizadorEncontrado.Nome + " com o número de cartão " + utilizadorEncontrado.NumeroCartaoBiblioteca +" foi removido.");
+            }
+        }
     }
 
     // ----------------- 10. Listar utilizador -----------------
 
     private static void ListarUtilizador()
     {
-        //to-do
+        Console.WriteLine("\n====== 10. Listar Utilizador ======\n");
+
+        if(utilizadores.Count == 0)
+        {
+            Console.WriteLine("\nNão existem utilizadores registados.");
+        }
+        else
+        {
+            foreach(Utilizador utilizador in utilizadores)
+            {
+                UtilizadorInfo(utilizador);
+            }
+        }
     }
 
 }
