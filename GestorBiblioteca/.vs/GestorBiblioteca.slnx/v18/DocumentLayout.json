@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "GestorBiblioteca\\Program.cs",
               "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Program.cs",
               "RelativeToolTip": "GestorBiblioteca\\Program.cs",
-              "ViewState": "AgIAAOUBAAAAAAAAAAAAwPUBAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAANACAAAAAAAAAAAlwNgCAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T14:51:47.056Z",
               "EditorCaption": ""
@@ -51,7 +51,7 @@
               "RelativeDocumentMoniker": "GestorBiblioteca\\Utilizador.cs",
               "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Utilizador.cs",
               "RelativeToolTip": "GestorBiblioteca\\Utilizador.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBQAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAmwBQAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-01T15:08:02.22Z",
               "EditorCaption": ""
@@ -66,8 +66,7 @@
               "RelativeToolTip": "GestorBiblioteca\\Livro.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAuwC4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T08:04:44.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-30T08:04:44.825Z"
             }
           ]
         }

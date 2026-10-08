@@ -399,32 +399,33 @@ class Program
             Disponivel = true
         };
 
+        livros.Add(livroNovo);
 
         // Guardar o livro no ficheiro.
-        GuardarLivro(livroNovo);
+        GuardarLivro();
     }
 
-    private static void GuardarLivro(Livro livroAGuardar)
+    private static void GuardarLivro()
     {
+        List<string> linhas = new List<string>();
+
         // Guardar o livro no ficheiro.
         //
         // Os campos são separados pelo carácter '|'.
         //
         // Environment.NewLine adiciona uma nova linha
         // no final do registo.
-        File.AppendAllText(
-            ficheiroLivros,
-            livroAGuardar.Título + "|" +
-            livroAGuardar.Autor + "|" +
-            livroAGuardar.ISBN + "|" +
-            livroAGuardar.AnoPublicacao + "|" +
-            livroAGuardar.Genero + "|" +
-            livroAGuardar.Disponivel +
-            Environment.NewLine);
+        foreach(Livro livro in livros)
+        {
+            linhas.Add(livro.Título + "|" +
+            livro.Autor + "|" +
+            livro.ISBN + "|" +
+            livro.AnoPublicacao + "|" +
+            livro.Genero + "|" +
+            livro.Disponivel);
+        }
 
-
-        // Adicionar também o livro à lista em memória.
-        livros.Add(livroAGuardar);
+        File.WriteAllLines(ficheiroLivros, linhas);
     }
 
     // ==========================================================
@@ -498,8 +499,8 @@ class Program
         utilizadorEncontrado.LivrosRequisitados.Add(livroARequisitar);
 
         //Atualizar os ficheiros
-        //GuardarLivro(livroARequisitar);
-        //GuardarUtilizador(utilizadorEncontrado);
+        GuardarLivro();
+        GuardarUtilizador();
 
         Console.WriteLine($"O livro {livroARequisitar.Título} de {livroARequisitar.Autor} foi requisitado por {utilizadorEncontrado.Nome}, com o nº {utilizadorEncontrado.NumeroCartaoBiblioteca}.");
     }
@@ -711,22 +712,25 @@ class Program
 
 
         // Guardar o utilizador no ficheiro.
-        GuardarUtilizador(novoUtilizador);
+        GuardarUtilizador();
+
+        Console.WriteLine("\nO utilizador foi adicionado.");
     }
 
-    private static void GuardarUtilizador(Utilizador utilizadorAGuardar)
+    private static void GuardarUtilizador()
     {
-        // Guardar o utilizador no ficheiro.
-        File.AppendAllText(
-            ficheiroUtilizadores,
-            utilizadorAGuardar.NumeroCartaoBiblioteca +
-            "|" +
-            utilizadorAGuardar.Nome +
-            Environment.NewLine);
+        List<string> linhas = new List<string>();
 
+        foreach(Utilizador utilizador in utilizadores)
+        {
+            linhas.Add(
+                utilizador.NumeroCartaoBiblioteca +
+                "|" +
+                utilizador.Nome
+                );
+        }
 
-        Console.WriteLine(
-            "\nO utilizador foi adicionado.");
+        File.WriteAllLines(ficheiroUtilizadores, linhas);
     }
 
     /// <summary>
