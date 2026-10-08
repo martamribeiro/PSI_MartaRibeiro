@@ -3,10 +3,10 @@ using System.IO;
 
 /*
  * Harry Potter|J.K. Rownling|34235346|2000|Fantasia|True
- * Harry Potter|J.K. Rownling|34235346|2000|Fantasia|True|000000000
+ * Harry Potter|J.K. Rownling|34235346|2000|Fantasia|True|0
  * Harry Potter|J.K. Rownling|34235346|2000|Fantasia|False|000000003
  * 
- * 000000001|Marta
+ * 000000001|Marta|0,0
  * 000000001|Marta|34235346,34545456
  * 
  */
@@ -432,7 +432,8 @@ class Program
             livro.ISBN + "|" +
             livro.AnoPublicacao + "|" +
             livro.Genero + "|" +
-            livro.Disponivel); //adicionar informação do UtilizadorRequisitado
+            livro.Disponivel + "|" +
+            livro.UtilizadorRequisitado.NumeroCartaoBiblioteca); //adicionar informação do UtilizadorRequisitado
         }
 
         File.WriteAllLines(ficheiroLivros, linhas);
@@ -733,11 +734,27 @@ class Program
 
         foreach(Utilizador utilizador in utilizadores)
         {
+
+            string isbn1 = "0", isbn2 = "0";
+
+            /*
+             * SE tivermos um livro na lista
+             *  colocamos o isbn desse livro em isbn1
+             * SE tivermos dois livros na lista
+             *  colocamos o isbn dos dois livros em isbn1 e isbn2, respetivamente
+             */
+
             linhas.Add(
                 utilizador.NumeroCartaoBiblioteca +
                 "|" +
-                utilizador.Nome
-                );  //adicionar informação dos LivrosRequisitados
+                utilizador.Nome +
+                "|" +
+                //utilizador.LivrosRequisitados[0].ISBN
+                isbn1 +
+                "|" +
+                //utilizador.LivrosRequisitados[1].ISBN
+                isbn2
+                );
         }
 
         File.WriteAllLines(ficheiroUtilizadores, linhas);
