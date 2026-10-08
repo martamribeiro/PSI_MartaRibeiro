@@ -21,7 +21,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 335,
+          "DockedWidth": 291,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "GestorBiblioteca\\Program.cs",
               "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Program.cs",
               "RelativeToolTip": "GestorBiblioteca\\Program.cs",
-              "ViewState": "AgIAANACAAAAAAAAAAAlwNgCAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAJ4BAAAAAAAAAAArwLIBAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T14:51:47.056Z",
               "EditorCaption": ""
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "DockedWidth": 81,
+          "DockedWidth": 125,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -51,7 +51,7 @@
               "RelativeDocumentMoniker": "GestorBiblioteca\\Utilizador.cs",
               "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Utilizador.cs",
               "RelativeToolTip": "GestorBiblioteca\\Utilizador.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAmwBQAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA6wBQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-01T15:08:02.22Z",
               "EditorCaption": ""
@@ -64,9 +64,10 @@
               "RelativeDocumentMoniker": "GestorBiblioteca\\Livro.cs",
               "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorBiblioteca\\GestorBiblioteca\\Livro.cs",
               "RelativeToolTip": "GestorBiblioteca\\Livro.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAuwC4AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAA7wC4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T08:04:44.825Z"
+              "WhenOpened": "2026-09-30T08:04:44.825Z",
+              "EditorCaption": ""
             }
           ]
         }

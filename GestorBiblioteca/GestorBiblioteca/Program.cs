@@ -1,6 +1,16 @@
 ﻿using System;
 using System.IO;
 
+/*
+ * Harry Potter|J.K. Rownling|34235346|2000|Fantasia|True
+ * Harry Potter|J.K. Rownling|34235346|2000|Fantasia|True|000000000
+ * Harry Potter|J.K. Rownling|34235346|2000|Fantasia|False|000000003
+ * 
+ * 000000001|Marta
+ * 000000001|Marta|34235346,34545456
+ * 
+ */
+
 /// <summary>
 /// Classe principal da aplicação de gestão da biblioteca.
 /// 
@@ -422,7 +432,7 @@ class Program
             livro.ISBN + "|" +
             livro.AnoPublicacao + "|" +
             livro.Genero + "|" +
-            livro.Disponivel);
+            livro.Disponivel); //adicionar informação do UtilizadorRequisitado
         }
 
         File.WriteAllLines(ficheiroLivros, linhas);
@@ -727,7 +737,7 @@ class Program
                 utilizador.NumeroCartaoBiblioteca +
                 "|" +
                 utilizador.Nome
-                );
+                );  //adicionar informação dos LivrosRequisitados
         }
 
         File.WriteAllLines(ficheiroUtilizadores, linhas);
