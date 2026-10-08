@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.IO;
 
 /*
@@ -200,6 +201,7 @@ class Program
         {
             // Se não existir, criar o ficheiro.
             File.Create(ficheiroLivros);
+            return;
         }
 
         // Ler todas as linhas do ficheiro.
@@ -427,13 +429,20 @@ class Program
         // no final do registo.
         foreach(Livro livro in livros)
         {
+            string numeroCartaoBiblioteca = "0";
+
+            if (livro.UtilizadorRequisitado != null)
+            {
+                numeroCartaoBiblioteca = livro.UtilizadorRequisitado.NumeroCartaoBiblioteca;
+            }
+
             linhas.Add(livro.Título + "|" +
             livro.Autor + "|" +
             livro.ISBN + "|" +
             livro.AnoPublicacao + "|" +
             livro.Genero + "|" +
             livro.Disponivel + "|" +
-            livro.UtilizadorRequisitado.NumeroCartaoBiblioteca); //adicionar informação do UtilizadorRequisitado
+            numeroCartaoBiblioteca); //adicionar informação do UtilizadorRequisitado
         }
 
         File.WriteAllLines(ficheiroLivros, linhas);
@@ -652,6 +661,7 @@ class Program
         {
             // Criar o ficheiro se este ainda não existir.
             File.Create(ficheiroUtilizadores);
+            return;
         }
 
         // Ler todas as linhas do ficheiro.
@@ -737,22 +747,22 @@ class Program
 
             string isbn1 = "0", isbn2 = "0";
 
-            /*
-             * SE tivermos um livro na lista
-             *  colocamos o isbn desse livro em isbn1
-             * SE tivermos dois livros na lista
-             *  colocamos o isbn dos dois livros em isbn1 e isbn2, respetivamente
-             */
+            if (utilizador.LivrosRequisitados.Count == 1)
+            {
+                isbn1 = utilizador.LivrosRequisitados[0].ISBN;
+            } else if (utilizador.LivrosRequisitados.Count == 2)
+            {
+                isbn1 = utilizador.LivrosRequisitados[0].ISBN;
+                isbn2 = utilizador.LivrosRequisitados[1].ISBN;
+            }
 
             linhas.Add(
                 utilizador.NumeroCartaoBiblioteca +
                 "|" +
                 utilizador.Nome +
                 "|" +
-                //utilizador.LivrosRequisitados[0].ISBN
                 isbn1 +
                 "|" +
-                //utilizador.LivrosRequisitados[1].ISBN
                 isbn2
                 );
         }
@@ -875,6 +885,19 @@ class Program
         Console.WriteLine(
             "Número do Cartão da Biblioteca: " +
             utilizador.NumeroCartaoBiblioteca);
+
+        if (utilizador.LivrosRequisitados.Count == 1)
+        {
+            Console.WriteLine($"O livro {utilizador.LivrosRequisitados[0].Título} de {utilizador.LivrosRequisitados[0].Autor} está requisitado.");
+        }else if(utilizador.LivrosRequisitados.Count == 2)
+        {
+            Console.WriteLine($"O livro {utilizador.LivrosRequisitados[0].Título} de {utilizador.LivrosRequisitados[0].Autor} está requisitado.");
+            Console.WriteLine($"O livro {utilizador.LivrosRequisitados[1].Título} de {utilizador.LivrosRequisitados[1].Autor} está requisitado.");
+        }
+        else
+        {
+            Console.WriteLine("O utilizador não requisitou qualquer livro.");
+        }
 
         Console.WriteLine("\n========================");
     }

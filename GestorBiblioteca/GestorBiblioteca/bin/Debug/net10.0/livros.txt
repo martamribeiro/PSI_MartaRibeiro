@@ -1,2 +1,2 @@
-Harry Potter|J.K. Rownling|34235346|2000|Fantasia|True
-1984|George Orwell|34545456|1940|Distopia|False
+Harry Potter|J.K. Rowling|12345|2000|Fantasia|True|0
+1984|George Orwell|56789|1940|Distopia|False|000000003
