@@ -44,11 +44,27 @@ class Livro
     /// </summary>
     public bool Disponivel { get; set; }
 
+    /// <summary>
+    /// Utilizador que tem o livro requisitado.
+    ///
+    /// Se o livro não estiver requisitado, esta propriedade
+    /// tem o valor null.
+    /// </summary>
     public Utilizador UtilizadorRequisitado { get; set; }
 
+    /// <summary>
+    /// Construtor da classe Livro.
+    ///
+    /// Inicializa um novo livro como disponível e sem
+    /// qualquer utilizador associado à sua requisição.
+    /// </summary>
     public Livro()
     {
+        // Por defeito, um livro acabado de criar está disponível.
         Disponivel = true;
+
+        // Inicialmente, o livro não está associado
+        // a nenhum utilizador.
         UtilizadorRequisitado = null;
     }
 

@@ -18,10 +18,23 @@ class Utilizador
     /// </summary>
     public string Nome { get; set; }
 
-    public List<Livro> LivrosRequisitados { get; set; } // limite de dois livros
+    /// <summary>
+    /// Lista dos livros que o utilizador tem requisitados.
+    ///
+    /// O programa limita o número de livros requisitados
+    /// por cada utilizador a dois.
+    /// </summary>
+    public List<Livro> LivrosRequisitados { get; set; }
 
+    /// <summary>
+    /// Construtor da classe Utilizador.
+    ///
+    /// Inicializa a lista de livros requisitados vazia,
+    /// para que possa receber livros posteriormente.
+    /// </summary>
     public Utilizador()
     {
         LivrosRequisitados = new List<Livro>();
     }
+
 }
