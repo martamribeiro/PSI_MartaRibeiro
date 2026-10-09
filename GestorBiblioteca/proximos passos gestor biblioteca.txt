@@ -1,3 +1,15 @@
-- alterar os ficheiros livros.txt e utilizadores.txt
--- alterar método GuardarLivro() -> adicionar informação do UtilizadorRequisitado
--- alterar método GuardarUtilizador() -> adicionar informação dos LivrosRequisitados
+- o livro que queremos devolver (isbn)
+-- se o livro existe E se realmente foi requisitado
+- o utilizador que está a devolver o livro
+-- se o utilizador existe E se foi ele que requisitou o livro
+
+- pedir para confirmar
+
+- utilizador:
+-- remover o livro da lista LivrosRequisitados
+
+- livro:
+-- Disponível passa a "true"
+-- UtilizadorRequisitado passa a null
+
+- atualizar os ficheiros
