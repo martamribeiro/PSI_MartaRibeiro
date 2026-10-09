@@ -398,7 +398,8 @@ class Program
             Genero = genero,
 
             // Um livro acabado de adicionar está disponível.
-            Disponivel = true
+            Disponivel = true,
+            UtilizadorRequisitado = null
         };
 
         livros.Add(livroNovo);
@@ -572,8 +573,69 @@ class Program
     /// </summary>
     private static void DevolverLivro()
     {
-        // TODO:
-        // Implementar a funcionalidade de devolução.
+        Console.WriteLine("\n====== 5. Devolver Livro ======\n");
+
+        Console.Write("\nInsira o ISBN do livro a devolver: ");
+        string isbnRemover = Console.ReadLine();
+
+        Livro livroEncontrado = null;
+
+        foreach (Livro livro in livros)
+        {
+            //se o livro existe
+            if(isbnRemover.Equals(livro.ISBN, StringComparison.OrdinalIgnoreCase)){
+                livroEncontrado = livro;
+                //se foi requisitado
+                if(livro.Disponivel == true)
+                {
+                    Console.WriteLine("O livro não está requisitado");
+                    return;
+                }
+                break;
+            }
+        }
+
+        if (livroEncontrado == null)
+        {
+            Console.WriteLine("Não existe nenhum livro com o isbn indicado.");
+            return;
+        }
+
+        //utilizador que tem o livro
+        Utilizador utilizadorComLivro = livroEncontrado.UtilizadorRequisitado;
+
+        Console.Write("\nInsira o número do cartão da biblioteca do utilizador: ");
+        string numeroUtilizador = Console.ReadLine();
+
+        Utilizador utilizadorEncontrado = null;
+
+        foreach(Utilizador utilizador in utilizadores)
+        {
+            //se o utilizador existe
+            if(numeroUtilizador.Equals(utilizador.NumeroCartaoBiblioteca, StringComparison.OrdinalIgnoreCase))
+            {
+                utilizadorEncontrado = utilizador;
+                //se este é o utilizador que tem o livro
+                if (utilizador.NumeroCartaoBiblioteca != utilizadorComLivro.NumeroCartaoBiblioteca) {
+                    Console.WriteLine("Este utilizador não tem o livro indicado.");
+                    return;
+                }
+                break;
+            }
+        }
+
+        if(utilizadorEncontrado == null)
+        {
+            Console.WriteLine("O utilizador com o número de cartão indicado não existe.");
+            return;
+        }
+
+        utilizadorEncontrado.LivrosRequisitados.Remove(livroEncontrado);
+        livroEncontrado.Disponivel = true;
+        livroEncontrado.UtilizadorRequisitado = null;
+
+        GuardarLivro();
+        GuardarUtilizador();
     }
 
 
@@ -759,7 +821,8 @@ class Program
             NumeroCartaoBiblioteca =
                 numeroCartaoBiblioteca,
 
-            Nome = nomeUtilizador
+            Nome = nomeUtilizador,
+            LivrosRequisitados = new List<Livro>()
         };
 
 

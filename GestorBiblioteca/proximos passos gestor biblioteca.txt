@@ -3,7 +3,7 @@
 - o utilizador que está a devolver o livro
 -- se o utilizador existe E se foi ele que requisitou o livro
 
-- pedir para confirmar
+(- pedir para confirmar)
 
 - utilizador:
 -- remover o livro da lista LivrosRequisitados
