@@ -1,0 +1,4 @@
+000000001|Ana Santos|0|0
+000000002|João Oliveira|0|0
+000000003|Maria Pereira|9780747532699|0
+000000004|Diogo Almeida|0|0

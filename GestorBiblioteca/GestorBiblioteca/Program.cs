@@ -31,12 +31,12 @@ class Program
     /// <summary>
     /// Nome do ficheiro onde são guardados os livros.
     /// </summary>
-    public const string ficheiroLivros = "livros.txt";
+    public const string ficheiroLivros = "livro.txt";
 
     /// <summary>
     /// Nome do ficheiro onde são guardados os utilizadores.
     /// </summary>
-    public const string ficheiroUtilizadores = "utilizadores.txt";
+    public const string ficheiroUtilizadores = "utilizador.txt";
 
     // ==========================================================
     // ========================= MAIN ===========================
@@ -190,7 +190,7 @@ class Program
         if (!File.Exists(ficheiroLivros))
         {
             // Se não existir, criar o ficheiro.
-            File.Create(ficheiroLivros);
+            using (File.Create(ficheiroLivros)) { }
             return;
         }
 
@@ -230,6 +230,28 @@ class Program
                 // para um valor booleano.
                 Disponivel = bool.Parse(dados[5])
             };
+
+            // Recuperar o número do cartão do utilizador
+            string numeroCartao = dados.Length > 6
+            ? dados[6]
+            : "0";
+
+            // Se o livro estiver requisitado, procurar o utilizador.
+            if (numeroCartao != "0")
+            {
+                foreach (Utilizador utilizador in utilizadores)
+                {
+                    if (utilizador.NumeroCartaoBiblioteca == numeroCartao)
+                    {
+                        livroNovo.UtilizadorRequisitado = utilizador;
+
+                        // Associar o livro à lista do utilizador.
+                        utilizador.LivrosRequisitados.Add(livroNovo);
+
+                        break;
+                    }
+                }
+            }
 
             // Adicionar o livro à lista.
             livros.Add(livroNovo);
@@ -293,7 +315,7 @@ class Program
         }
         else
         {
-            Console.WriteLine("O livro não está disponível");
+            Console.WriteLine($"O livro está a ser requisitado por {livro.UtilizadorRequisitado.Nome}, com o número de cartão {livro.UtilizadorRequisitado.NumeroCartaoBiblioteca}.");
         }
 
         Console.WriteLine("=============================");
@@ -757,7 +779,7 @@ class Program
         if (!File.Exists(ficheiroUtilizadores))
         {
             // Criar o ficheiro se este ainda não existir.
-            File.Create(ficheiroUtilizadores);
+            using (File.Create(ficheiroUtilizadores)) { }
             return;
         }
 
