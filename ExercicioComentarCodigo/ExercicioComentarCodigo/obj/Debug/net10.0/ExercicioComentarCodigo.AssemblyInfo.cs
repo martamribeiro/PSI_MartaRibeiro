@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExercicioComentarCodigo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c7d4129109400ce50fba1eea8e2cb1ae6d83f41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9faf7804817f0043cbb14c077c674356a998b150")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExercicioComentarCodigo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExercicioComentarCodigo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

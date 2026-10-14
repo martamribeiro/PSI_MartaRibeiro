@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Projects\\PSI_MartaRibeiro\\ExercicioComentarCodigo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3C60D2C-1F3C-4D0A-B080-D90EA2267934}|ExercicioComentarCodigo\\ExercicioComentarCodigo.csproj|c:\\projects\\psi_martaribeiro\\exerciciocomentarcodigo\\exerciciocomentarcodigo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3C60D2C-1F3C-4D0A-B080-D90EA2267934}|ExercicioComentarCodigo\\ExercicioComentarCodigo.csproj|solutionrelative:exerciciocomentarcodigo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4F50C97-8321-DF14-F5BF-CB58489AD979}|ExercicioComentarCodigo\\ExercicioComentarCodigo.csproj|c:\\projects\\psi_martaribeiro\\exerciciocomentarcodigo\\exerciciocomentarcodigo\\loja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4F50C97-8321-DF14-F5BF-CB58489AD979}|ExercicioComentarCodigo\\ExercicioComentarCodigo.csproj|solutionrelative:exerciciocomentarcodigo\\loja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3C60D2C-1F3C-4D0A-B080-D90EA2267934}|ExercicioComentarCodigo\\ExercicioComentarCodigo.csproj|c:\\projects\\psi_martaribeiro\\exerciciocomentarcodigo\\exerciciocomentarcodigo\\loja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3C60D2C-1F3C-4D0A-B080-D90EA2267934}|ExercicioComentarCodigo\\ExercicioComentarCodigo.csproj|solutionrelative:exerciciocomentarcodigo\\loja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4F50C97-8321-DF14-F5BF-CB58489AD979}|ExercicioComentarCodigo\\ExercicioComentarCodigo.csproj|c:\\projects\\psi_martaribeiro\\exerciciocomentarcodigo\\exerciciocomentarcodigo\\videojogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4F50C97-8321-DF14-F5BF-CB58489AD979}|ExercicioComentarCodigo\\ExercicioComentarCodigo.csproj|solutionrelative:exerciciocomentarcodigo\\videojogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3C60D2C-1F3C-4D0A-B080-D90EA2267934}|ExercicioComentarCodigo\\ExercicioComentarCodigo.csproj|c:\\projects\\psi_martaribeiro\\exerciciocomentarcodigo\\exerciciocomentarcodigo\\videojogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3C60D2C-1F3C-4D0A-B080-D90EA2267934}|ExercicioComentarCodigo\\ExercicioComentarCodigo.csproj|solutionrelative:exerciciocomentarcodigo\\videojogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E4F50C97-8321-DF14-F5BF-CB58489AD979}|ExercicioComentarCodigo\\ExercicioComentarCodigo.csproj|c:\\projects\\psi_martaribeiro\\exerciciocomentarcodigo\\exerciciocomentarcodigo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4F50C97-8321-DF14-F5BF-CB58489AD979}|ExercicioComentarCodigo\\ExercicioComentarCodigo.csproj|solutionrelative:exerciciocomentarcodigo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 209,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Videojogo.cs",
               "DocumentMoniker": "C:\\Projects\\PSI_MartaRibeiro\\ExercicioComentarCodigo\\ExercicioComentarCodigo\\Videojogo.cs",
               "RelativeDocumentMoniker": "ExercicioComentarCodigo\\Videojogo.cs",
               "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\ExercicioComentarCodigo\\ExercicioComentarCodigo\\Videojogo.cs",
               "RelativeToolTip": "ExercicioComentarCodigo\\Videojogo.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAswBQAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-14T13:40:27.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Loja.cs",
               "DocumentMoniker": "C:\\Projects\\PSI_MartaRibeiro\\ExercicioComentarCodigo\\ExercicioComentarCodigo\\Loja.cs",
               "RelativeDocumentMoniker": "ExercicioComentarCodigo\\Loja.cs",
               "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\ExercicioComentarCodigo\\ExercicioComentarCodigo\\Loja.cs",
               "RelativeToolTip": "ExercicioComentarCodigo\\Loja.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAADwv04AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-14T13:40:10.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Projects\\PSI_MartaRibeiro\\ExercicioComentarCodigo\\ExercicioComentarCodigo\\Program.cs",
               "RelativeDocumentMoniker": "ExercicioComentarCodigo\\Program.cs",
               "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\ExercicioComentarCodigo\\ExercicioComentarCodigo\\Program.cs",
               "RelativeToolTip": "ExercicioComentarCodigo\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAQwGUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-14T13:38:30.107Z",
               "EditorCaption": ""

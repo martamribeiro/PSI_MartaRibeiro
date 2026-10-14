@@ -1,0 +1,16 @@
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\bin\Debug\net10.0\ExercicioComentarCodigo.exe
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\bin\Debug\net10.0\ExercicioComentarCodigo.deps.json
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\bin\Debug\net10.0\ExercicioComentarCodigo.runtimeconfig.json
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\bin\Debug\net10.0\ExercicioComentarCodigo.dll
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\bin\Debug\net10.0\ExercicioComentarCodigo.pdb
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\obj\Debug\net10.0\ExercicioComentarCodigo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\obj\Debug\net10.0\ExercicioComentarCodigo.AssemblyInfoInputs.cache
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\obj\Debug\net10.0\ExercicioComentarCodigo.AssemblyInfo.cs
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\obj\Debug\net10.0\ExercicioComentarCodigo.csproj.CoreCompileInputs.cache
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\obj\Debug\net10.0\ExercicioComentarCodigo.sourcelink.json
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\obj\Debug\net10.0\ExercicioComentarCodigo.dll
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\obj\Debug\net10.0\refint\ExercicioComentarCodigo.dll
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\obj\Debug\net10.0\ExercicioComentarCodigo.pdb
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\obj\Debug\net10.0\ExercicioComentarCodigo.genruntimeconfig.cache
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\obj\Debug\net10.0\ref\ExercicioComentarCodigo.dll
+C:\Projects\PSI_MartaRibeiro\ExercicioComentarCodigo\ExercicioComentarCodigo\obj\Debug\net10.0\Exercici.FC29AA51.Up2Date
