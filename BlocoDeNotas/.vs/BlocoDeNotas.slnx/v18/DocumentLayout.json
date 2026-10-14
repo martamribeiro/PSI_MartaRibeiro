@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Projects\\PSI_MartaRibeiro\\BlocoDeNotas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2505BBFE-6A35-4EAD-B9DE-F66C79E92D76}|BlocoDeNotas\\BlocoDeNotas.csproj|c:\\projects\\psi_martaribeiro\\blocodenotas\\blocodenotas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2505BBFE-6A35-4EAD-B9DE-F66C79E92D76}|BlocoDeNotas\\BlocoDeNotas.csproj|solutionrelative:blocodenotas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{534E1D79-5C2E-7A71-3085-07D75667B79A}|BlocoDeNotas\\BlocoDeNotas.csproj|c:\\projects\\psi_martaribeiro\\blocodenotas\\blocodenotas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{534E1D79-5C2E-7A71-3085-07D75667B79A}|BlocoDeNotas\\BlocoDeNotas.csproj|solutionrelative:blocodenotas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,7 +24,7 @@
               "RelativeDocumentMoniker": "BlocoDeNotas\\Program.cs",
               "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\BlocoDeNotas\\BlocoDeNotas\\Program.cs",
               "RelativeToolTip": "BlocoDeNotas\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAswGUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-14T08:24:49.677Z",
               "EditorCaption": ""
