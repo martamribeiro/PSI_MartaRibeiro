@@ -13,5 +13,6 @@ namespace GestorDeTarefas
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
         }
+
     }
 }

@@ -2,9 +2,13 @@ namespace GestorDeTarefas
 {
     public partial class Form1 : Form
     {
+
+        string ficheiroTarefas = "tarefas.txt";
+
         public Form1()
         {
             InitializeComponent();
+            ImportarTarefas();
         }
 
         //método que é corrido ao clicar no botão "Adicionar"
@@ -15,6 +19,7 @@ namespace GestorDeTarefas
             {
                 tarefas.Items.Add(tarefa);
                 textBoxAdicionar.Clear();
+                GuardarTarefas();
             }
         }
 
@@ -33,7 +38,30 @@ namespace GestorDeTarefas
                 int indice = tarefas.SelectedIndex;
                 string tarefaCompleta = tarefas.SelectedItem.ToString() + " ✅";
                 tarefas.Items[indice] = tarefaCompleta;
+                GuardarTarefas();
             }
+        }
+
+
+        void ImportarTarefas()
+        { 
+            if (!File.Exists(ficheiroTarefas))
+            {
+                File.Create(ficheiroTarefas).Close();
+            }
+            else
+            {
+                string[] linhas = File.ReadAllLines(ficheiroTarefas);
+                foreach (string linha in linhas)
+                {
+                    tarefas.Items.Add(linha);
+                }
+            }
+        }
+
+        void GuardarTarefas()
+        {
+            File.WriteAllLines(ficheiroTarefas, tarefas.Items.Cast<string>());
         }
     }
 }
