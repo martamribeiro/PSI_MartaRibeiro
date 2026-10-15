@@ -80,6 +80,7 @@
             botaoCompletar.TabIndex = 4;
             botaoCompletar.Text = "Completar";
             botaoCompletar.UseVisualStyleBackColor = true;
+            botaoCompletar.Click += botaoCompletar_Click;
             // 
             // botaoApagar
             // 
@@ -89,6 +90,7 @@
             botaoApagar.TabIndex = 5;
             botaoApagar.Text = "Apagar";
             botaoApagar.UseVisualStyleBackColor = true;
+            botaoApagar.Click += botaoApagar_Click;
             // 
             // Form1
             // 

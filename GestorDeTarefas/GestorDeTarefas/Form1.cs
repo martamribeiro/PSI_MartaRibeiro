@@ -17,5 +17,23 @@ namespace GestorDeTarefas
                 textBoxAdicionar.Clear();
             }
         }
+
+        private void botaoApagar_Click(object sender, EventArgs e)
+        {
+            if (tarefas.SelectedItem != null)
+            {
+                tarefas.Items.Remove(tarefas.SelectedItem);
+            }
+        }
+
+        private void botaoCompletar_Click(object sender, EventArgs e)
+        {
+            if(tarefas.SelectedItem != null)
+            {
+                int indice = tarefas.SelectedIndex;
+                string tarefaCompleta = tarefas.SelectedItem.ToString() + " ✅";
+                tarefas.Items[indice] = tarefaCompleta;
+            }
+        }
     }
 }
