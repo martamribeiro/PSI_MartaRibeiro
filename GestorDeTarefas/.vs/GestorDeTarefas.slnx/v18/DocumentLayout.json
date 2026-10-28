@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|c:\\projects\\psi_martaribeiro\\gestordetarefas\\gestordetarefas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|solutionrelative:gestordetarefas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|c:\\projects\\psi_martaribeiro\\gestordetarefas\\gestordetarefas\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|solutionrelative:gestordetarefas\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|c:\\projects\\psi_martaribeiro\\gestordetarefas\\gestordetarefas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|solutionrelative:gestordetarefas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|c:\\projects\\psi_martaribeiro\\gestordetarefas\\gestordetarefas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|solutionrelative:gestordetarefas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|c:\\projects\\psi_martaribeiro\\gestordetarefas\\gestordetarefas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|solutionrelative:gestordetarefas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|c:\\projects\\psi_martaribeiro\\gestordetarefas\\gestordetarefas\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|solutionrelative:gestordetarefas\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|c:\\projects\\psi_martaribeiro\\gestordetarefas\\gestordetarefas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B68235FD-D374-13EE-AED4-515747163B34}|GestorDeTarefas\\GestorDeTarefas.csproj|solutionrelative:gestordetarefas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,8 +25,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 380,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 150,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,57 +34,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\GestorDeTarefas\\Form1.cs",
-              "RelativeDocumentMoniker": "GestorDeTarefas\\Form1.cs",
-              "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\GestorDeTarefas\\Form1.cs",
-              "RelativeToolTip": "GestorDeTarefas\\Form1.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAowDQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T14:44:41.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\GestorDeTarefas\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "GestorDeTarefas\\Form1.Designer.cs",
-              "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\GestorDeTarefas\\Form1.Designer.cs",
-              "RelativeToolTip": "GestorDeTarefas\\Form1.Designer.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAQwHAAAAASAAAAAAAAAA==",
+              "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\GestorDeTarefas\\Form1.Designer.cs*",
+              "RelativeToolTip": "GestorDeTarefas\\Form1.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-14T14:41:05.025Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\GestorDeTarefas\\Program.cs",
               "RelativeDocumentMoniker": "GestorDeTarefas\\Program.cs",
               "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\GestorDeTarefas\\Program.cs",
               "RelativeToolTip": "GestorDeTarefas\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowBEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-14T14:40:47.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\GestorDeTarefas\\Form1.cs",
+              "RelativeDocumentMoniker": "GestorDeTarefas\\Form1.cs",
+              "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\GestorDeTarefas\\Form1.cs*",
+              "RelativeToolTip": "GestorDeTarefas\\Form1.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T14:44:41.992Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 100,
+          "DockedWidth": 330,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\GestorDeTarefas\\Form1.cs",
               "RelativeDocumentMoniker": "GestorDeTarefas\\Form1.cs",
-              "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\GestorDeTarefas\\Form1.cs [Design]",
-              "RelativeToolTip": "GestorDeTarefas\\Form1.cs [Design]",
+              "ToolTip": "C:\\Projects\\PSI_MartaRibeiro\\GestorDeTarefas\\GestorDeTarefas\\Form1.cs [Design]*",
+              "RelativeToolTip": "GestorDeTarefas\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-14T15:41:14.797Z",
               "EditorCaption": " [Design]"
